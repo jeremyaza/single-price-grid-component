@@ -19,6 +19,7 @@
 --------------*/
 .content_component {
   background-color: var(--bg-component);
+  box-shadow: 0 7px 8px 2.3px rgba(50, 46, 53, 0.11);
   width: clamp(375px, 50%, 1440px);
   border-radius: 10px;
   transition: all ease 0.65s;
@@ -43,6 +44,8 @@
 .header_component .header_component__accent {
   color: var(--bright-yellow);
   padding: 10px 0;
+  font-size: clamp(1rem, 1.1rem, 1.12rem);
+  font-weight: 600;
 }
 
 /* Body */
