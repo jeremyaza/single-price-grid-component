@@ -1,0 +1,149 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 0 2rem 0;
+  background-color: var(--light-gray);
+}
+
+.main_content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/*-------------- 
+    COMPONENT
+--------------*/
+.content_component {
+  background-color: var(--bg-component);
+  width: clamp(375px, 50%, 1440px);
+  border-radius: 10px;
+  transition: all ease 0.65s;
+  line-height: 23px;
+}
+
+/* header */
+.header_component {
+  padding: 2rem 3rem;
+}
+
+.header_component p {
+  color: var(--grayish-blue);
+}
+
+.header_component__title {
+  color: var(--cyan);
+  font-size: clamp(1rem, 1.3rem, 2rem);
+  padding: 0 0 1rem 0;
+}
+
+.header_component .header_component__accent {
+  color: var(--bright-yellow);
+  padding: 10px 0;
+}
+
+/* Body */
+.body_component {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  color: white;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  background-color: var(--cyan);
+  border-radius: 0 0 10px 10px;
+}
+
+.body_component__title {
+  font-size: clamp(1rem, 1.1rem, 1.3rem);
+  font-weight: 700;
+}
+
+/* Left side */
+.body_component__left_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.3rem 3rem 2rem 3rem;
+}
+
+.price {
+  padding: 1rem 0;
+}
+
+.price p {
+  font-weight: 300;
+}
+
+.price .price__title {
+  display: flex;
+  align-items: center;
+  font-size: min(2.5rem, 3rem);
+  font-weight: 700;
+  padding: 1rem 0;
+}
+
+.price .price__accent {
+  color: rgba(255, 255, 255, 0.541);
+  padding: 0 0 0 1rem;
+}
+
+.sign_up {
+  cursor: pointer;
+  background-color: var(--bright-yellow);
+  border: none;
+  padding: 0.8rem 0;
+  border-radius: 5px;
+  box-shadow: 0 7px 7px 2px rgba(31, 30, 32, 0.089);
+  color: white;
+  font-weight: 700;
+}
+
+/* Right side */
+.body_component__right_side {
+  padding: 2.3rem 3rem 2rem 3rem;
+  background-color: rgba(255, 255, 255, 0.158);
+}
+
+.menu {
+  padding-top: 1rem;
+  font-weight: 200;
+  color: var(--light-gray);
+}
+
+/*-------------- 
+    FOOTER
+--------------*/
+footer {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+}
+
+footer a {
+  color: var(--cyan);
+}
+
+.attribution,
+footer a {
+  font-size: clamp(0.8rem, 0.9rem, 1rem);
+}
+
+/*-------------- 
+    RESPONSIVE
+--------------*/
+
+@media screen and (max-width: 650px) {
+  /*-------------- 
+    COMPONENT
+    --------------*/
+  .header_component {
+    padding: 2rem 2rem;
+  }
+  /* Left side */
+  .body_component__left_side,
+  .body_component__right_side {
+    padding: 1.4rem 2rem;
+  }
+}
