@@ -8,7 +8,7 @@ Challenge by Frontend Mentor 💻
 
 ## Live Application URL ✨
 
-The Application is deployed in 
+The Application is deployed in [Netlify](https://single-price-grid-component-jeremy.netlify.app/)
 
 Click on the link to see the web
 
